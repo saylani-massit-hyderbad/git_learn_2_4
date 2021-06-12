@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color:rgb(30, 126, 6);
+    text-align: center;
+}
+.container ul{
+    display: inline-flex;
+    list-style: none;
+}
+.container ul li{
+    width: 160px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.container ul li:hover{
+    background-color: rgb(23, 88, 7);
+    border-radius: 3px;
+}
+.container ul li .fas{
+    margin-right: 10px;
+}
+
+.submenu-1{
+    display: none;
+}
+
+.container ul li:hover .submenu-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(44, 185, 8);
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.container ul li:hover .submenu-1 ul{
+   
+    display: block;
+    /* margin: 10px; */
+}
+.container ul li:hover .submenu-1 ul li{
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+}
+.container ul li:hover .submenu-1 ul li:last-child{
+    border-bottom:none;
+}
+.fa-chevron-right{
+    float: right;  
+}
+ .submenu-2{
+    display: none;
+}
+.hover-me:hover .submenu-2 {
+    border-radius: 2px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    margin-left: 175px;
+    margin-top: -40px;
+
+} 
